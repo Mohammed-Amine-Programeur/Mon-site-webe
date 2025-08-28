@@ -1,0 +1,100 @@
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #0b67ff;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+header h1 span {
+  color: #ffeb3b;
+}
+header .lead {
+  font-size: 18px;
+  margin: 10px 0 20px;
+}
+.btn {
+  background: white;
+  color: #0b67ff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover {
+  background: #ffeb3b;
+  color: #000;
+}
+
+/* Sections */
+section {
+  margin: 40px 0;
+}
+h2 {
+  color: #0b67ff;
+  margin-bottom: 10px;
+}
+
+/* Skills */
+.skills {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills li {
+  background: #eef2ff;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Projets */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.project {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.project h3 {
+  margin-top: 0;
+}
+.project a {
+  color: #0b67ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  color: #aaa;
+  margin-top: 40px;
+}

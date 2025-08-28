@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO -->
+  <title>Portfolio de Mohammed Amine Benameur - Développeur Web</title>
+  <meta name="description" content="Portfolio personnel de [Ton Nom], développeur web spécialisé en HTML, CSS et création de sites modernes. Découvrez mes projets et contactez-moi.">
+  <meta name="keywords" content="Portfolio, Développeur Web, HTML, CSS, GitHub Pages, Omnisavoir">
+  <meta name="author" content="[Ton Nom]">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Bonjour, je suis <span>Mohammed Amine Benameur</span></h1>
+      <p class="lead">Développeur Web basé à Bercksne. Passionné par la création de sites modernes et accessibles.</p>
+      <a href="#contact" class="btn">Me Contacter</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>À propos de moi</h2>
+      <p>Je m'appelle <strong>Mohammed Amine Benameur</strong>. J’ai de l’expérience en HTML, CSS et GitHub Pages. 
+      Mon objectif est de créer des sites simples, rapides et optimisés pour Google.</p>
+    </section>
+
+    <section>
+      <h2>Compétences</h2>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Responsive Design</li>
+        <li>SEO</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projets</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Omnisavoir</h3>
+          <p>Un site encyclopédique sur l’univers Marvel.</p>
+          <a href="Omnisavoir.html">Voir le projet</a>
+        </div>
+        <div class="project">
+          <h3>Portfolio</h3>
+          <p>Collection de sites et templates créés avec HTML & CSS.</p>
+          <a href="#">Voir le projet</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:ton.email@example.com">mohammeaminebenameur@example.com</a></p>
+      <p>Téléphone : [+212 6 01 93 49 92]</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Mohammed Aine Benameur. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
