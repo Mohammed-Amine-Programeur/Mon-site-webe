@@ -1,25 +1,25 @@
 /* Style général */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   line-height: 1.6;
-  background: #f9f9f9;
+  background: #f4f7fc;
   color: #333;
 }
 
 /* Container */
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 20px;
 }
 
 /* Header */
 header {
-  background: #0b67ff;
+  background: linear-gradient(135deg, #0b67ff, #0053cc);
   color: white;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 header h1 span {
@@ -28,27 +28,34 @@ header h1 span {
 header .lead {
   font-size: 18px;
   margin: 10px 0 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn {
   background: white;
   color: #0b67ff;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 12px 24px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
 }
 .btn:hover {
   background: #ffeb3b;
   color: #000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* Sections */
 section {
-  margin: 40px 0;
+  margin: 60px 0;
 }
 h2 {
   color: #0b67ff;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  border-left: 5px solid #0b67ff;
+  padding-left: 10px;
 }
 
 /* Skills */
@@ -57,26 +64,36 @@ h2 {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 .skills li {
   background: #eef2ff;
-  padding: 8px 12px;
-  border-radius: 20px;
+  padding: 10px 15px;
+  border-radius: 25px;
   font-size: 14px;
+  transition: 0.3s;
+}
+.skills li:hover {
+  background: #0b67ff;
+  color: white;
 }
 
 /* Projets */
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
 }
 .project {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 .project h3 {
   margin-top: 0;
@@ -90,11 +107,37 @@ h2 {
   text-decoration: underline;
 }
 
+/* Contact */
+#contact p {
+  margin: 10px 0;
+}
+.social {
+  color: #0b67ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.social:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background: #ffffff;
-  color: #aaa;
+  background: #fff;
+  color: #666;
+  font-size: 14px;
   margin-top: 40px;
+  border-top: 1px solid #ddd;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    padding: 60px 15px;
+  }
+  .btn {
+    padding: 10px 20px;
+  }
+}
+
