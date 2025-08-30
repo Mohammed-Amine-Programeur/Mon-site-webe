@@ -6,18 +6,85 @@
   
   <!-- SEO -->
   <title>Portfolio de Mohammed Amine Benameur - Développeur Web</title>
-  <meta name="description" content="Portfolio personnel de [Ton Nom], développeur web spécialisé en HTML, CSS et création de sites modernes. Découvrez mes projets et contactez-moi.">
+  <meta name="description" content="Portfolio personnel de Mohammed Amine Benameur, développeur web spécialisé en HTML, CSS et création de sites modernes. Découvrez mes projets et contactez-moi.">
   <meta name="keywords" content="Portfolio, Développeur Web, HTML, CSS, GitHub Pages, Omnisavoir">
-  <meta name="author" content="[Ton Nom]">
+  <meta name="author" content="Mohammed Amine Benameur">
   
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <div class="container">
       <h1>Bonjour, je suis <span>Mohammed Amine Benameur</span></h1>
-      <p class="lead">Développeur Web basé à Berckane. Passionné par la création de sites modernes et accessibles.</p>
+      <p class="lead">Développeur Web basé à Berkane. Passionné par la création de sites modernes, rapides et accessibles.</p>
+      <a href="#contact" class="btn">Me Contacter</a>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    
+    <!-- À propos -->
+    <section id="about">
+      <h2>À propos de moi</h2>
+      <p>Je m'appelle <strong>Mohammed Amine Benameur</strong>. J’ai de l’expérience en HTML, CSS et GitHub Pages et Boostrap. 
+      Mon objectif est de créer des sites simples, rapides, esthétiques et optimisés pour Google.</p>
+    </section>
+
+    <!-- Compétences -->
+    <section id="skills">
+      <h2>Compétences</h2>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Responsive Design</li>
+        <li>Boostrap</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects">
+      <h2>Projets</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>OpenInfo-Marvel</h3>
+          <p>Un site encyclopédique sur l’univers Marvel.</p>
+          <a href="https://mohammed-amine-programeur.github.io/OpenInfo-Marvel/index.html" target="_blank">Voir le projet</a>
+        </div>
+        <div class="project">
+          <h3>OpenInfo-Palestine</h3>
+          <p>Collection de sites et templates créés avec HTML & CSS.</p>
+          <a href="https://mohammed-amine-programeur.github.io/OpenInfo-Palestine/" target="_blank">Voir le projet</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:mohammedaminebenameur@example.com">mohammedaminebenameur@example.com</a></p>
+      <p>
+        <a href="https://github.com/mohammed-amine-programeur" target="_blank" class="social">GitHub</a> | 
+        <a href="https://linkedin.com" target="_blank" class="social">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Mohammed Amine Benameur. Tous droits réservés.</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+ppeur Web basé à Berckane. Passionné par la création de sites modernes et accessibles.</p>
       <a href="#contact" class="btn">Me Contacter</a>
     </div>
   </header>
@@ -71,4 +138,5 @@
   </script>
 </body>
 </html>
+
 
